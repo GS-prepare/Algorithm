@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A4E5966A23D83DF300F48F50 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4E5966923D83DF300F48F50 /* main.cpp */; };
 		A4E5967723D83E3900F48F50 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4E5967623D83E3900F48F50 /* main.cpp */; };
+		A4E5968223D84FE400F48F50 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4E5968123D84FE400F48F50 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		A4E5967D23D84FE400F48F50 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +47,8 @@
 		A4E5966923D83DF300F48F50 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A4E5967423D83E3900F48F50 /* Dijkstra's_algo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Dijkstra's_algo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E5967623D83E3900F48F50 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A4E5967F23D84FE400F48F50 /* Bellman-Ford_algo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Bellman-Ford_algo"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4E5968123D84FE400F48F50 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A4E5967C23D84FE400F48F50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,6 +81,7 @@
 			children = (
 				A4E5966823D83DF300F48F50 /* Basic_Algo */,
 				A4E5967523D83E3900F48F50 /* Dijkstra's_algo */,
+				A4E5968023D84FE400F48F50 /* Bellman-Ford_algo */,
 				A4E5966723D83DF300F48F50 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +91,7 @@
 			children = (
 				A4E5966623D83DF300F48F50 /* Basic_Algo */,
 				A4E5967423D83E3900F48F50 /* Dijkstra's_algo */,
+				A4E5967F23D84FE400F48F50 /* Bellman-Ford_algo */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +110,14 @@
 				A4E5967623D83E3900F48F50 /* main.cpp */,
 			);
 			path = "Dijkstra's_algo";
+			sourceTree = "<group>";
+		};
+		A4E5968023D84FE400F48F50 /* Bellman-Ford_algo */ = {
+			isa = PBXGroup;
+			children = (
+				A4E5968123D84FE400F48F50 /* main.cpp */,
+			);
+			path = "Bellman-Ford_algo";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +157,23 @@
 			productReference = A4E5967423D83E3900F48F50 /* Dijkstra's_algo */;
 			productType = "com.apple.product-type.tool";
 		};
+		A4E5967E23D84FE400F48F50 /* Bellman-Ford_algo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4E5968323D84FE400F48F50 /* Build configuration list for PBXNativeTarget "Bellman-Ford_algo" */;
+			buildPhases = (
+				A4E5967B23D84FE400F48F50 /* Sources */,
+				A4E5967C23D84FE400F48F50 /* Frameworks */,
+				A4E5967D23D84FE400F48F50 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bellman-Ford_algo";
+			productName = "Bellman-Ford_algo";
+			productReference = A4E5967F23D84FE400F48F50 /* Bellman-Ford_algo */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -141,6 +187,9 @@
 						CreatedOnToolsVersion = 10.3;
 					};
 					A4E5967323D83E3900F48F50 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					A4E5967E23D84FE400F48F50 = {
 						CreatedOnToolsVersion = 10.3;
 					};
 				};
@@ -159,6 +208,7 @@
 			targets = (
 				A4E5966523D83DF300F48F50 /* Basic_Algo */,
 				A4E5967323D83E3900F48F50 /* Dijkstra's_algo */,
+				A4E5967E23D84FE400F48F50 /* Bellman-Ford_algo */,
 			);
 		};
 /* End PBXProject section */
@@ -177,6 +227,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4E5967723D83E3900F48F50 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4E5967B23D84FE400F48F50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4E5968223D84FE400F48F50 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +384,22 @@
 			};
 			name = Release;
 		};
+		A4E5968423D84FE400F48F50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A4E5968523D84FE400F48F50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -352,6 +426,15 @@
 			buildConfigurations = (
 				A4E5967923D83E3900F48F50 /* Debug */,
 				A4E5967A23D83E3900F48F50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4E5968323D84FE400F48F50 /* Build configuration list for PBXNativeTarget "Bellman-Ford_algo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4E5968423D84FE400F48F50 /* Debug */,
+				A4E5968523D84FE400F48F50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
