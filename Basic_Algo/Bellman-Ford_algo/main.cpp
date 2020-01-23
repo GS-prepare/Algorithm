@@ -41,9 +41,22 @@ void Bellman-Ford(G,W,S){
     }
 }
 
+void DAG_Shorest_Path(G,W,S){
+    Topological_Sort(G) to get <v1,v2,....,vn>
+    Initialize_Single_Source(G,S);
+    for i = 1 to n {
+        for each v ∈ adj[Vi]{
+            Relax(u,v,w); 
+        }
+    }
+}
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Bellman-Ford \n";
     Bellman-Ford(G,W,S);
+    
+    std::cout << "DAG find SP \n";
+    DAG_Shorest_Path(G,W,S);
     return 0;
 }
