@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A489257E23DC0F2E002EA0D0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A489257D23DC0F2E002EA0D0 /* main.cpp */; };
 		A4E5966A23D83DF300F48F50 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4E5966923D83DF300F48F50 /* main.cpp */; };
 		A4E5967723D83E3900F48F50 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4E5967623D83E3900F48F50 /* main.cpp */; };
 		A4E5968223D84FE400F48F50 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4E5968123D84FE400F48F50 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		A489257923DC0F2E002EA0D0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		A4E5966423D83DF300F48F50 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,6 +53,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A489257B23DC0F2E002EA0D0 /* Breath-First Search (BFS) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Breath-First Search (BFS)"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A489257D23DC0F2E002EA0D0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A4E5966623D83DF300F48F50 /* Basic_Algo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Basic_Algo; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E5966923D83DF300F48F50 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A4E5967423D83E3900F48F50 /* Dijkstra's_algo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Dijkstra's_algo"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +64,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A489257823DC0F2E002EA0D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A4E5966323D83DF300F48F50 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,12 +95,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A489257C23DC0F2E002EA0D0 /* Breath-First Search (BFS) */ = {
+			isa = PBXGroup;
+			children = (
+				A489257D23DC0F2E002EA0D0 /* main.cpp */,
+			);
+			path = "Breath-First Search (BFS)";
+			sourceTree = "<group>";
+		};
 		A4E5965D23D83DF300F48F50 = {
 			isa = PBXGroup;
 			children = (
 				A4E5966823D83DF300F48F50 /* Basic_Algo */,
 				A4E5967523D83E3900F48F50 /* Dijkstra's_algo */,
 				A4E5968023D84FE400F48F50 /* Bellman-Ford_algo */,
+				A489257C23DC0F2E002EA0D0 /* Breath-First Search (BFS) */,
 				A4E5966723D83DF300F48F50 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +120,7 @@
 				A4E5966623D83DF300F48F50 /* Basic_Algo */,
 				A4E5967423D83E3900F48F50 /* Dijkstra's_algo */,
 				A4E5967F23D84FE400F48F50 /* Bellman-Ford_algo */,
+				A489257B23DC0F2E002EA0D0 /* Breath-First Search (BFS) */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +152,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A489257A23DC0F2E002EA0D0 /* Breath-First Search (BFS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A489258123DC0F2E002EA0D0 /* Build configuration list for PBXNativeTarget "Breath-First Search (BFS)" */;
+			buildPhases = (
+				A489257723DC0F2E002EA0D0 /* Sources */,
+				A489257823DC0F2E002EA0D0 /* Frameworks */,
+				A489257923DC0F2E002EA0D0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Breath-First Search (BFS)";
+			productName = "Breath-First Search (BFS)";
+			productReference = A489257B23DC0F2E002EA0D0 /* Breath-First Search (BFS) */;
+			productType = "com.apple.product-type.tool";
+		};
 		A4E5966523D83DF300F48F50 /* Basic_Algo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4E5966D23D83DF300F48F50 /* Build configuration list for PBXNativeTarget "Basic_Algo" */;
@@ -183,6 +229,9 @@
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = Sun;
 				TargetAttributes = {
+					A489257A23DC0F2E002EA0D0 = {
+						CreatedOnToolsVersion = 10.3;
+					};
 					A4E5966523D83DF300F48F50 = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -209,11 +258,20 @@
 				A4E5966523D83DF300F48F50 /* Basic_Algo */,
 				A4E5967323D83E3900F48F50 /* Dijkstra's_algo */,
 				A4E5967E23D84FE400F48F50 /* Bellman-Ford_algo */,
+				A489257A23DC0F2E002EA0D0 /* Breath-First Search (BFS) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A489257723DC0F2E002EA0D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A489257E23DC0F2E002EA0D0 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A4E5966223D83DF300F48F50 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,6 +299,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		A489257F23DC0F2E002EA0D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A489258023DC0F2E002EA0D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		A4E5966B23D83DF300F48F50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -403,6 +477,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A489258123DC0F2E002EA0D0 /* Build configuration list for PBXNativeTarget "Breath-First Search (BFS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A489257F23DC0F2E002EA0D0 /* Debug */,
+				A489258023DC0F2E002EA0D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A4E5966123D83DF300F48F50 /* Build configuration list for PBXProject "Basic_Algo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
